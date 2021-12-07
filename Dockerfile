@@ -34,9 +34,6 @@ RUN wget --no-verbose https://s3.amazonaws.com/rstudio-shiny-server-os-build/ubu
 ## CRAN packages
 RUN R -e "install.packages(c('devtools', 'rsconnect', 'shiny', 'heatmaply', 'gplots', 'data.table'))"
 
-## BIOCONDUCTOR
-RUN R -e "BiocManager::install(c('BiocGenerics'))"
-
 # Copy configuration files into the Docker image
 COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
 COPY shiny-server.sh /usr/bin/shiny-server.sh
