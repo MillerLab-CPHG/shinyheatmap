@@ -1,4 +1,4 @@
-name: Docker Build CI for PlaqView
+name: Docker Build CI for Shinyheatmap
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
         with:
           push: true
           no-cache: true
-          tags: quay.io/uvarc/shinyheatmap:latest # change this tag to whichever to match container-image
+          tags: quay.io/wfma888/shinyheatmap:latest # change this tag to whichever to match container-image
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
