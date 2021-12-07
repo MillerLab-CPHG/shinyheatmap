@@ -3,7 +3,7 @@ name: Docker Build CI for Shinyheatmap
 on:
   push:
     branches:
-    - 'main' # change this whenever you switch branch
+    - 'master' # change this whenever you switch branch
 
 jobs:
   Build:
