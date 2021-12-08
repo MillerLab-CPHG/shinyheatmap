@@ -47,7 +47,7 @@ RUN cp -r shinyheatmap/* /srv/shiny-server/
 # Make the ShinyApp available at port 80
 EXPOSE 80
 WORKDIR /srv/shiny-server
-CMD R -e "options('shiny.port'=80,shiny.host='0.0.0.0');shiny::runApp('server.R')"
+CMD R -e "options('shiny.port'=80,shiny.host='0.0.0.0');shiny::runApp('app.R')"
 
 #RUN chown shiny.shiny /usr/bin/shiny-server.sh && chmod 755 /usr/bin/shiny-server.sh
 
