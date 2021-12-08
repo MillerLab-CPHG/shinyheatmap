@@ -1,5 +1,5 @@
 # Install R version 4.0.5
-FROM r-base:4.0.5
+FROM r-base:4.0.5 
 
 # Install Ubuntu packages
 RUN apt-get update && apt-get install -y \
